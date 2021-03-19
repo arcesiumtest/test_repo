@@ -1,4 +1,4 @@
-import subprocess as sp, datetime
+import subprocess as sp, datetime, time
 
 
 def make_changes_and_commit(times=1):
@@ -8,6 +8,7 @@ def make_changes_and_commit(times=1):
         file.write(to_append + '\n')
         file.close()
         print(sp.run(['git', 'add', '*']))
+        time.sleep(1)
         print(sp.run(['git', 'commit', '-m', to_append]))
 
 
