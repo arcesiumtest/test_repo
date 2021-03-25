@@ -16,5 +16,9 @@ def push_origin():
     print(sp.run(['git', 'push', 'origin', 'master']))
 
 
-make_changes_and_commit(21)
-push_origin()
+#
+# make_changes_and_commit(21)
+# push_origin()
+
+# sp.run(['cd', '/codemill/vardhang/repo/extra'])
+print(sp.run(['ls'],cwd='/codemill/vardhang/repo/extra'))
