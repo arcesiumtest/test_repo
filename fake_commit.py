@@ -8,7 +8,7 @@ def make_changes_and_commit(times=1):
         file.write(to_append + '\n')
         file.close()
         print(sp.run(['git', 'add', '*']))
-        time.sleep(1)
+        time.sleep(2)
         print(sp.run(['git', 'commit', '-m', to_append]))
 
 
@@ -17,7 +17,7 @@ def push_origin():
 
 
 #
-make_changes_and_commit(21)
+make_changes_and_commit(5)
 push_origin()
 
 # sp.run(['cd', '/codemill/vardhang/repo/extra'])
